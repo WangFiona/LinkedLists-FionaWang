@@ -1,15 +1,18 @@
 #ifndef NODE_H
 #define NODE_H
+#include "Student.h"
 #include <iostream>
 
 using namespace std;
 
 /*
+ * Author: Fiona Wang
+ * Date: Jan. 3, 2022
  */
 
 class Node{
  public:
-  Node();
+  Node(Student* newStudent);
   ~Node();
   void setStudent(Student* newStudent);
   Student* getStudent();

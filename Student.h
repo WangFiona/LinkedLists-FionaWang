@@ -4,8 +4,13 @@
 
 using namespace std;
 
-class student{
+class Student{
  public:
-  student();
+  Student(char* newName);
+  //int GPA;
+  char* name;
+  //void setGPA(int newGPA);
+  //int getGPA();
+  char* getName();
 };
 #endif
