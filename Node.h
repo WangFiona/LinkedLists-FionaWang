@@ -15,7 +15,7 @@ class Node{
   Node(Student* newStudent);
   ~Node();
   void setStudent(Student* newStudent);
-  Student* getStudent();
+  char* getStudent();
   void setNext(Node* newNode);
   Node* getNext();
 

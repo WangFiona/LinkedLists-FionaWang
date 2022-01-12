@@ -24,8 +24,8 @@ void Node::setStudent(Student* newStudent){
   value = newStudent;
 }
 
-Student* Node::getStudent(){
-  return value;
+char* Node::getStudent(){
+  return value->getName();
 }
 
 void Node::setNext(Node* newNode){

@@ -4,8 +4,10 @@
 
 using namespace std;
 
-void add(Student* newStudent, Node* &head);
-void print(Node* next);
+/*
+ * Author: Fiona Wang
+ * Date: January 11,2022
+ */
 
 int main(){
   Node* head = NULL;
@@ -14,28 +16,16 @@ int main(){
   Student* student1 = new Student(name);
   strcpy(name, "Angie");
   Student* student2 = new Student(name);
+
+  head = new Node(student1);
+  head->setStudent(student1);
+
+  head->setNext(new Node(student2));
+  head->getNext()->setStudent(student2);
+
+  cout << "Student Names:" << endl;
+  cout << head->getStudent() << endl;
+  cout << head->getNext()->getStudent() << endl;
   
   return 0;
-}
-
-void add(Student* newStudent, Node* &head){
-  Node* current = head;
-  if(current==NULL){
-    head = new Node();
-    head->setStudent(newStudent);
-  }
-  else {
-    while(current->getNext() != NULL){
-      current = current->getNext();
-    }
-    current->setNext(new Node());
-    current->getNext()->setNext(newStudent);
-  }
-}
-
-void print(Node* head){
-  if(head != NULL){
-    cout << head->getStudent() << " ";
-    print(next->getNext());
-  }
 }

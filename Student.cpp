@@ -1,5 +1,5 @@
 #include <iostream>
-#include "student.h"
+#include "Student.h"
 #include <cstring>
 
 using namespace std;
