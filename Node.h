@@ -8,10 +8,12 @@ using namespace std;
 /*
  * Author: Fiona Wang
  * Date: Jan. 3, 2022
+ * This is the node header file and contains get and set functions
  */
 
 class Node{
  public:
+  //Initializing node functions
   Node(Student* newStudent);
   ~Node();
   void setStudent(Student* newStudent);
@@ -20,6 +22,7 @@ class Node{
   Node* getNext();
 
  private:
+  //Initializing node variables
   Student* value;
   Node* next;
 };

@@ -4,20 +4,19 @@
 
 using namespace std;
 
-Student::Student(char* newName){//, int newGPA){
-  //GPA=newGPA;
+/* 
+ * Author: Fiona Wang
+ * Date: January 11, 2022
+ * This is the student cpp file
+ */
+
+//Creating and setting student variables
+Student::Student(char* newName){
   name = new char[20];
   strcpy(name, newName);
 }
 
-/*void Student::setGPA(int newGPA){
-  GPA=newGPA;
-}
-
-int Student::getGPA(){
-  return GPA;
-  }*/
-
+//Getting the student's name
 char* Student::getName(){
   return name;
 }
